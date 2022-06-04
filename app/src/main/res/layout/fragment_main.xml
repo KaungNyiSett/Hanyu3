@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white_and_black"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:padding="30dp"
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/home"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <android.widget.Button
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:textColor="@color/on_primary"
+        android:id="@+id/learn_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/learn"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.enzhongwen.hanyu3.MainFragment"
+        android:label="Hanyu 3"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment"
+            app:enterAnim="@anim/from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.enzhongwen.hanyu3.LessonFragment"
+        android:label="Lessons"
+        tools:layout="@layout/fragment_lesson">
+        <action
+            android:id="@+id/action_lessonFragment_to_vocabularyFragment"
+            app:destination="@id/vocabularyFragment"
+            app:enterAnim="@anim/from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/vocabularyFragment"
+        android:name="com.enzhongwen.hanyu3.VocabularyFragment"
+        android:label="Vocabulary {lessonNo}"
+        tools:layout="@layout/fragment_vocabulary">
+        <argument
+            android:name="lessonNo"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_strokeFragment"
+            app:destination="@id/strokeFragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading12Fragment"
+            app:destination="@id/reading12Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading1Fragment"
+            app:destination="@id/reading1Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading10Fragment"
+            app:destination="@id/reading10Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading11Fragment"
+            app:destination="@id/reading11Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading13Fragment"
+            app:destination="@id/reading13Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading14Fragment"
+            app:destination="@id/reading14Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading15Fragment"
+            app:destination="@id/reading15Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading2Fragment"
+            app:destination="@id/reading2Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading3Fragment"
+            app:destination="@id/reading3Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading4Fragment"
+            app:destination="@id/reading4Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading5Fragment"
+            app:destination="@id/reading5Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading6Fragment"
+            app:destination="@id/reading6Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading7Fragment"
+            app:destination="@id/reading7Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading8Fragment"
+            app:destination="@id/reading8Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_reading9Fragment"
+            app:destination="@id/reading9Fragment"
+            app:enterAnim="@anim/from_right" />
+        <action
+            android:id="@+id/action_vocabularyFragment_to_savedFragment"
+            app:destination="@id/savedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.enzhongwen.hanyu3.ExerciseFragment"
+        android:label="Exercise"
+        tools:layout="@layout/fragment_exercise" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.enzhongwen.hanyu3.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/strokeFragment"
+        android:name="com.enzhongwen.hanyu3.StrokeFragment"
+        android:label="Stroke"
+        tools:layout="@layout/fragment_stroke" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading12Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading12Fragment"
+        android:label="Reading 12"
+        tools:layout="@layout/fragment_reading12">
+        <action
+            android:id="@+id/action_reading12Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading1Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading1Fragment"
+        android:label="Reading 1"
+        tools:layout="@layout/fragment_reading1">
+        <action
+            android:id="@+id/action_reading1Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading10Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading10Fragment"
+        android:label="Reading 10"
+        tools:layout="@layout/fragment_reading10">
+        <action
+            android:id="@+id/action_reading10Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading11Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading11Fragment"
+        android:label="Reading 11"
+        tools:layout="@layout/fragment_reading11">
+        <action
+            android:id="@+id/action_reading11Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading13Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading13Fragment"
+        android:label="Reading 13"
+        tools:layout="@layout/fragment_reading13">
+        <action
+            android:id="@+id/action_reading13Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading14Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading14Fragment"
+        android:label="Reading 14"
+        tools:layout="@layout/fragment_reading14">
+        <action
+            android:id="@+id/action_reading14Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading15Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading15Fragment"
+        android:label="Reading 15"
+        tools:layout="@layout/fragment_reading15">
+        <action
+            android:id="@+id/action_reading15Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading2Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading2Fragment"
+        android:label="Reading 2"
+        tools:layout="@layout/fragment_reading2">
+        <action
+            android:id="@+id/action_reading2Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading3Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading3Fragment"
+        android:label="Reading 3"
+        tools:layout="@layout/fragment_reading3">
+        <action
+            android:id="@+id/action_reading3Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading4Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading4Fragment"
+        android:label="Reading 4"
+        tools:layout="@layout/fragment_reading4">
+        <action
+            android:id="@+id/action_reading4Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading5Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading5Fragment"
+        android:label="Reading 5"
+        tools:layout="@layout/fragment_reading5">
+        <action
+            android:id="@+id/action_reading5Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading6Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading6Fragment"
+        android:label="Reading 6"
+        tools:layout="@layout/fragment_reading6">
+        <action
+            android:id="@+id/action_reading6Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading7Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading7Fragment"
+        android:label="Reading 7"
+        tools:layout="@layout/fragment_reading7">
+        <action
+            android:id="@+id/action_reading7Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading8Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading8Fragment"
+        android:label="Reading 8"
+        tools:layout="@layout/fragment_reading8">
+        <action
+            android:id="@+id/action_reading8Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reading9Fragment"
+        android:name="com.enzhongwen.hanyu3.reading.Reading9Fragment"
+        android:label="Reading 9"
+        tools:layout="@layout/fragment_reading9">
+        <action
+            android:id="@+id/action_reading9Fragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allvocabFragment"
+        android:name="com.enzhongwen.hanyu3.AllvocabFragment"
+        android:label="Vocabulary"
+        tools:layout="@layout/fragment_allvocab">
+        <action
+            android:id="@+id/action_allvocabFragment_to_strokeFragment"
+            app:destination="@id/strokeFragment"
+            app:enterAnim="@anim/from_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.enzhongwen.hanyu3.SavedFragment"
+        android:label="Saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_savedFragment_to_strokeFragment"
+            app:destination="@id/strokeFragment" />
+    </fragment>
+</navigation>

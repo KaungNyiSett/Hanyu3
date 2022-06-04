@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#ff55ab</color>
+    <color name="primary_varient">#c80e7c</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="black_and_white">#000000</color>
+    <color name="white_and_black">#FFFFFF</color>
+    <color name="grey">#dedede</color>
+    <color name="def">#03a9f4</color>
+    <color name="yellow_and_blue">#ff55ab</color>
+    <color name="pale_green_and_darker">#FFF3FC</color>
+</resources>

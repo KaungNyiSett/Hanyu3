@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#999999</color>
+    <color name="primary_varient">#1b1b1b</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="black_and_white">#FFFFFF</color>
+    <color name="white_and_black">#000000</color>
+    <color name="grey">#222222</color>
+    <color name="yellow_and_blue">#27aae1</color>
+    <color name="pale_green_and_darker">#2f2f2f</color>
+</resources>

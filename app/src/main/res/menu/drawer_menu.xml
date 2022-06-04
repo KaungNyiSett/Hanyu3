@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="Vocabulary"
+        android:id="@+id/allvocabFragment"
+        app:showAsAction="always"
+        android:icon="@drawable/white_a"/>
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="Settings"
+        app:showAsAction="always"
+        android:icon="@drawable/settings_all_white"/>
+
+    <item
+        android:id="@+id/savedFragment"
+        android:title="Saved"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_star_filled"/>
+
+</menu>
